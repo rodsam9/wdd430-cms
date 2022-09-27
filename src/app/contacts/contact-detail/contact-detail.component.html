@@ -2,18 +2,20 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="panel panel-default">
+            <div class="pull-left">
+                <img src="{{ contact.imageUrl }}" alt="{{contact.name}}" class="img-responsive">
+            </div>
+            
             <div class="panel-heading">
                 <div class="row">
                     <button class="btn btn-danger pull-right">Delete</button>
-                    <button class="btn btn-primary pull-right">Edit</button>
-                    
-                </div>
-                
+                    <button class="btn btn-primary pull-right">Edit</button>  
+                </div>  
             </div>
             <div class="panel-body">
                 <div class="pull-left">
-                    <h4 class="list-group-item-heading">Email: </h4>
-                    <h4 class="list-group-item-heading">Phone: </h4>
+                    <p class="list-group-item-heading">Email: {{ contact.email }}</p>
+                    <p class="list-group-item-heading">Phone: {{ contact.phone }}</p>
                 </div>
                 
             </div>
