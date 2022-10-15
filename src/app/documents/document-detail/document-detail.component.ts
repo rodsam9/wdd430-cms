@@ -12,5 +12,6 @@ export class DocumentDetailComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }
