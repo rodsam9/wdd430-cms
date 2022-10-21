@@ -4,11 +4,11 @@
             <div class="panel-heading">
                 <div class="row">
                     <span class="title" style="font-size:3rem">Contacts</span>
-                    <button class="btn btn-success pull-right">New Contact</button>
+                    <button class="btn btn-success" routerLink="new">New Contact</button>
                 </div>
                 
             </div>
-            <app-contact-item *ngFor="let contactItem of contacts" [contact]="contactItem" (click)="onSelected(contactItem)"></app-contact-item>
+            <app-contact-item *ngFor="let contactItem of contacts" [contact]="contactItem"></app-contact-item>
         </div>
     </div>
 </div>
