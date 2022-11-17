@@ -88,7 +88,7 @@ updateDocument(originalDocument: Document, newDocument: Document) {
     return;
   }
   newDocument.id = originalDocument.id;
-  document[pos] = newDocument;
+  this.documents[pos] = newDocument;
   this.storeDocuments();
 }
 
